@@ -7,5 +7,5 @@ build: dep test
 dep:
 	dep ensure
 
-test:
+test: dep
 	go test ./...
