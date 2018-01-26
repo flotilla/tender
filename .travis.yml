@@ -3,4 +3,8 @@ language: go
 go:
   - 1.9.x
 
-script: make
+install:
+  - go get -u github.com/golang/dep/cmd/dep
+
+script:
+  - make
